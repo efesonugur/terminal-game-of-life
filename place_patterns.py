@@ -26,8 +26,6 @@ OSCILLATOR_PATTERNS = {
     "pentadecathlon": PENTADECATHLON
 }
 
-#CAN_PLACE = False
-
 def can_place(board, pattern, top, left):
     rows, cols = len(board), len(board[0])
     for r,c in pattern:
@@ -86,7 +84,7 @@ def place_random_still_lives(board, count, still_life_choices, max_tries=30, wra
         kind = random.choice(still_life_choices)
         pat = random_oriented(STILL_LIFE_PATTERNS[kind])
         placed = False
-        
+
         if wrap:
             for _t in range(max_tries):
                 top = random.randint(0, rows - 1)
