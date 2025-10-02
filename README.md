@@ -87,11 +87,11 @@ Notes:
 
 ## Troubleshooting & tips
 
-- **Terminal size** — Because braille maps 4×2 logical pixels into one character, ensure your terminal is large enough to display `cols/2` characters and `rows/4` lines. If you see wrapping, either enlarge the terminal or reduce `--cols`/`--rows`.
+- **Terminal size**: Because braille maps 4×2 logical pixels into one character, ensure your terminal is large enough to display `cols/2` characters and `rows/4` lines. If you see wrapping, either enlarge the terminal or reduce `--cols`/`--rows`.
 
-- **Scrollbar growth** — Use `./play.sh` to play baked files so the alternate buffer is used; avoid `cat`ting the baked file.
+- **Scrollbar growth**: Use `./play.sh` to play baked files so the alternate buffer is used; avoid `cat`ting the baked file.
 
-- **Reproducibility** — Use `--seed N` to get repeatable placements.
+- **Reproducibility**: Use `--seed N` to get repeatable placements.
 
 ---
 
